@@ -365,3 +365,17 @@ Même chaîne que les autres apps loisir :
    pour proposer titre original, saga et année — ou tout en local, saisi à la
    main ? Sans référentiel, la recherche par titre original ne marche que si on
    l'a saisi.
+
+## 12. Décisions validées (Sylvain, 2026-09-29)
+
+Le design est validé avec ces réponses aux questions du § 11 :
+
+1. **Stockage** : SQLite (relations, unicité des adresses, recherche, sauvegarde en un fichier).
+2. **Liaison worker → API** : par le réseau local (`discotheque.dark-blue.lan`), pas par le tunnel Cloudflare.
+3. **Worker** : Python (OpenCV + client Ollama), démarrage manuel en V1.
+4. **Photos** : conservées en pleine résolution ; vignettes d'affichage dérivées.
+5. **Sauvegarde** : téléchargement manuel en V1 ; copie automatique vers le NAS plus tard.
+6. **Vraies données sur dark-blue** : oui, derrière un PIN obligatoire (hors git).
+7. **Référentiel de titres externe (TMDB)** : plus tard, lot optionnel L22 ; la V1 est entièrement locale.
+
+Modèles vision : installation de 2 à 3 candidats sur Big-Blue autorisée pour l'essai L3.

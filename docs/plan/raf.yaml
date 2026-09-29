@@ -9,12 +9,14 @@ uxSince: 2026-09-29
 lots:
   - id: L1
     title: "Cadrage : dépôt, spec d'origine, design, plan"
-    status: doing
+    status: done
     estimate: 0.5
     created: 2026-09-29
     started: 2026-09-29
     notes:
       - { date: 2026-09-29, text: squelette + spec + design + plan posés le 29-09 ; reste la validation du design par Sylvain (docs/design.md §11) avant de fermer }
+      - { date: 2026-09-29, text: "Sylvain 29-09 : design validé ; réponses au § 12 de docs/design.md (SQLite, worker Python par le LAN, pleine résolution, sauvegarde manuelle, vraies données derrière PIN, TMDB plus tard)" }
+    finished: 2026-09-29
   - id: L2
     title: "Jeu d'essai : 10 photos réelles + vérité terrain saisie à la main"
     status: todo
@@ -163,3 +165,4 @@ lots:
     created: 2026-09-29
     notes:
       - { date: 2026-09-29, text: "conditionnel : à dropper si Sylvain choisit le tout-local" }
+      - { date: 2026-09-29, text: "Sylvain 29-09 : reporté après la V1 (optionnel)" }
