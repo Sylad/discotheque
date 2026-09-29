@@ -17,7 +17,7 @@ backups/
 *.sqlite-shm
 *.db
 # Jeu d'essai de reconnaissance (photos réelles des classeurs)
-essais/
+/essais/
 # Photos déposées par erreur à la racine
 /*.jpg
 /*.jpeg
