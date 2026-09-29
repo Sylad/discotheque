@@ -1,0 +1,53 @@
+# Dépendances
+node_modules/
+
+# Builds
+dist/
+.vite/
+*.tsbuildinfo
+coverage/
+
+# Données : catalogue, photos, sauvegardes — JAMAIS versionnées
+data/
+backend/data/
+photos/
+backups/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+# Jeu d'essai de reconnaissance (photos réelles des classeurs)
+essais/
+# Photos déposées par erreur à la racine
+/*.jpg
+/*.jpeg
+/*.png
+/*.heic
+/*.webp
+
+# Environnement (secrets : APP_PIN, WORKER_TOKEN)
+.env
+.env.local
+*.env.local
+!.env.example
+
+# Worker vision (Python)
+.venv/
+__pycache__/
+*.pyc
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Outils / IDE
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# page générée par raf gantt
+docs/plan/gantt.html
