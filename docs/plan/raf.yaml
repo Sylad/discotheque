@@ -1,0 +1,165 @@
+# Plan « reste à faire » tenu par raf (https://github.com/Sylad/cadence).
+# Édité par le CLI, mais les modifications à la main et les commentaires sont préservés.
+# Un commit appartient à un lot quand son message cite l'identifiant (L3, L3/t1).
+version: 1
+project: "discotheque"
+prefix: L
+since: 2026-09-29 # raf check ignore les commits antérieurs à l'adoption
+uxSince: 2026-09-29
+lots:
+  - id: L1
+    title: "Cadrage : dépôt, spec d'origine, design, plan"
+    status: doing
+    estimate: 0.5
+    created: 2026-09-29
+    started: 2026-09-29
+    notes:
+      - { date: 2026-09-29, text: squelette + spec + design + plan posés le 29-09 ; reste la validation du design par Sylvain (docs/design.md §11) avant de fermer }
+  - id: L2
+    title: "Jeu d'essai : 10 photos réelles + vérité terrain saisie à la main"
+    status: todo
+    estimate: 0.5
+    after: [ L1 ]
+    created: 2026-09-29
+    notes:
+      - { date: 2026-09-29, text: "spec §8 : reflets, séries, bonus, plusieurs éditions d'un même film ; photos dans essais/ (gitignoré), vérité terrain en JSON hors git" }
+  - id: L3
+    title: "Essai vision sur les 10 photos : modèles candidats, grille de notation, verdict (jalon qui départage le modèle)"
+    status: todo
+    estimate: 1
+    after: [ L2 ]
+    created: 2026-09-29
+    notes:
+      - { date: 2026-09-29, text: "installé au 29-09 : seul gemma3:27b a la vision ; candidats à installer (accord de Sylvain) : qwen2.5vl/qwen3-vl, mistral-small3.2:24b, llama3.2-vision:11b, minicpm-v:8b, gemma3:12b ; critère éliminatoire = taux d'inventions ; verdict dans docs/essai-vision.md" }
+  - id: L4
+    title: "Squelette app : NestJS + React/TanStack/Tailwind, /api/health, PinGuard, Dockerfiles"
+    status: todo
+    estimate: 1
+    after: [ L1 ]
+    created: 2026-09-29
+  - id: L5
+    title: "Infra : CI build.yml, chart developpeur-gitops/charts/discotheque, scripts deploy/verify, Secret PIN + WORKER_TOKEN, route tunnel"
+    status: todo
+    estimate: 1
+    after: [ L4 ]
+    created: 2026-09-29
+    notes:
+      - { date: 2026-09-29, text: hors de ce dépôt pour le chart (developpeur-gitops) ; paquets GHCR privés + regcred ; Deployment backend en Recreate (SQLite + PVC RWO) ; nginx client_max_body_size 25m }
+  - id: L6
+    title: Page Nouveautés (cadence news) + écran PIN
+    status: todo
+    estimate: 0.5
+    visible: true
+    after: [ L4 ]
+    created: 2026-09-29
+  - id: L7
+    title: "Modèle de données SQLite : schéma, migrations, contraintes d'adresse, provenance reconnu/confirmé"
+    status: todo
+    estimate: 1
+    after: [ L4 ]
+    created: 2026-09-29
+  - id: L8
+    title: "Écran Classeurs : créer un classeur, pages, grille 2×2, première face isolée"
+    status: todo
+    estimate: 1
+    visible: true
+    after: [ L7 ]
+    created: 2026-09-29
+  - id: L9
+    title: "Écran Ajouter des photos : classeur, pages proposées, prise/import, stockage PVC, EXIF retiré, historique"
+    status: todo
+    estimate: 1
+    visible: true
+    after: [ L8 ]
+    created: 2026-09-29
+  - id: L10
+    title: "Découpe en 8 cases : grille ajustable au doigt, mémorisée par classeur"
+    status: todo
+    estimate: 1
+    visible: true
+    after: [ L9 ]
+    created: 2026-09-29
+  - id: L11
+    title: File de travaux + API worker (bail, battement de cœur, mode dégradé affiché)
+    status: todo
+    estimate: 0.75
+    after: [ L7 ]
+    created: 2026-09-29
+  - id: L12
+    title: "Worker vision Big-Blue : redressement de case, appel Ollama, JSON avec preuve lue"
+    status: todo
+    estimate: 1
+    after: [ L3, L10, L11 ]
+    created: 2026-09-29
+    notes:
+      - { date: 2026-09-29, text: "langage (Python proposé) et chemin réseau (LAN ou tunnel) : questions 2 et 3 du design" }
+  - id: L13
+    title: Écran de validation rapide des 8 pochettes (tout valider, corriger, bonus/vide, reporter, reprendre un disque)
+    status: todo
+    estimate: 1
+    visible: true
+    after: [ L10, L11 ]
+    created: 2026-09-29
+  - id: L14
+    title: "Œuvres / éditions / exemplaires : rattachement explicite, copies, disques, fiche d'une œuvre"
+    status: todo
+    estimate: 1
+    visible: true
+    after: [ L13 ]
+    created: 2026-09-29
+  - id: L15
+    title: "Recherche tolérante : FTS5 trigram + similarité, titre FR/original, saga, série/saison, résultats groupés"
+    status: todo
+    estimate: 1
+    visible: true
+    after: [ L14 ]
+    created: 2026-09-29
+  - id: L16
+    title: "Emplacement surligné : photo de référence avec la pochette encadrée"
+    status: todo
+    estimate: 0.5
+    visible: true
+    after: [ L15 ]
+    created: 2026-09-29
+  - id: L17
+    title: Déplacer un disque + résolution des conflits d'emplacement
+    status: todo
+    estimate: 0.5
+    visible: true
+    after: [ L14 ]
+    created: 2026-09-29
+  - id: L18
+    title: "Nouvelle photo d'une page cataloguée : rapprochement par adresse, propositions, confirmé préservé"
+    status: todo
+    estimate: 1
+    visible: true
+    after: [ L12, L13 ]
+    created: 2026-09-29
+  - id: L19
+    title: "Écran À vérifier : non identifiés, incertains, doublons possibles, conflits, pages non photographiées, échecs"
+    status: todo
+    estimate: 1
+    visible: true
+    after: [ L17, L18 ]
+    created: 2026-09-29
+  - id: L20
+    title: Sauvegarde / restauration / export CSV (zip base + photos + manifeste, test aller-retour)
+    status: todo
+    estimate: 1
+    visible: true
+    after: [ L14 ]
+    created: 2026-09-29
+  - id: L21
+    title: "Essai de réception V1 : critères spec §8 sur les 10 photos puis un classeur entier"
+    status: todo
+    estimate: 1
+    after: [ L5, L6, L16, L19, L20 ]
+    created: 2026-09-29
+  - id: L22
+    title: Référentiel de titres externe (titre original, saga, année) — seulement si la question 7 du design est acceptée
+    status: todo
+    estimate: 0.75
+    after: [ L14 ]
+    created: 2026-09-29
+    notes:
+      - { date: 2026-09-29, text: "conditionnel : à dropper si Sylvain choisit le tout-local" }
