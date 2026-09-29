@@ -19,12 +19,14 @@ lots:
     finished: 2026-09-29
   - id: L2
     title: "Jeu d'essai : 10 photos réelles + vérité terrain saisie à la main"
-    status: todo
+    status: doing
     estimate: 0.5
     after: [ L1 ]
     created: 2026-09-29
     notes:
       - { date: 2026-09-29, text: "spec §8 : reflets, séries, bonus, plusieurs éditions d'un même film ; photos dans essais/ (gitignoré), vérité terrain en JSON hors git" }
+      - { date: 2026-09-29, text: "Sylvain 29-09 : 10 photos originales 4080×3064 dans essais/photos (non versionnées) ; vérité terrain pré-remplie par Claude (photos transmises à Anthropic pour cette préparation seulement, accord explicite), corrigée ensuite par Sylvain" }
+    started: 2026-09-29
   - id: L3
     title: "Essai vision sur les 10 photos : modèles candidats, grille de notation, verdict (jalon qui départage le modèle)"
     status: todo
