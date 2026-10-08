@@ -52,6 +52,7 @@ lots:
       - { date: 2026-09-29, text: hors de ce dépôt pour le chart (developpeur-gitops) ; paquets GHCR privés + regcred ; Deployment backend en Recreate (SQLite + PVC RWO) ; nginx client_max_body_size 25m }
   - id: L6
     title: Page Nouveautés (cadence news) + écran PIN
+    public: Page Nouveautés et écran PIN
     status: todo
     estimate: 0.5
     visible: true
@@ -65,6 +66,7 @@ lots:
     created: 2026-09-29
   - id: L8
     title: "Écran Classeurs : créer un classeur, pages, grille 2×2, première face isolée"
+    public: "Classeurs : créer un classeur et ses pages"
     status: todo
     estimate: 1
     visible: true
@@ -72,6 +74,7 @@ lots:
     created: 2026-09-29
   - id: L9
     title: "Écran Ajouter des photos : classeur, pages proposées, prise/import, stockage PVC, EXIF retiré, historique"
+    public: Ajouter des photos d'un classeur
     status: todo
     estimate: 1
     visible: true
@@ -79,6 +82,7 @@ lots:
     created: 2026-09-29
   - id: L10
     title: "Découpe en 8 cases : grille ajustable au doigt, mémorisée par classeur"
+    public: Découpe d'une page en 8 cases ajustable au doigt
     status: todo
     estimate: 1
     visible: true
@@ -100,6 +104,7 @@ lots:
       - { date: 2026-09-29, text: "langage (Python proposé) et chemin réseau (LAN ou tunnel) : questions 2 et 3 du design" }
   - id: L13
     title: Écran de validation rapide des 8 pochettes (tout valider, corriger, bonus/vide, reporter, reprendre un disque)
+    public: Validation rapide des 8 pochettes d'une page
     status: todo
     estimate: 1
     visible: true
@@ -107,6 +112,7 @@ lots:
     created: 2026-09-29
   - id: L14
     title: "Œuvres / éditions / exemplaires : rattachement explicite, copies, disques, fiche d'une œuvre"
+    public: Œuvres, éditions et exemplaires
     status: todo
     estimate: 1
     visible: true
@@ -114,6 +120,7 @@ lots:
     created: 2026-09-29
   - id: L15
     title: "Recherche tolérante : FTS5 trigram + similarité, titre FR/original, saga, série/saison, résultats groupés"
+    public: Recherche tolérante aux fautes, titres FR et originaux
     status: todo
     estimate: 1
     visible: true
@@ -121,6 +128,7 @@ lots:
     created: 2026-09-29
   - id: L16
     title: "Emplacement surligné : photo de référence avec la pochette encadrée"
+    public: Emplacement d'un disque surligné sur la photo
     status: todo
     estimate: 0.5
     visible: true
@@ -128,6 +136,7 @@ lots:
     created: 2026-09-29
   - id: L17
     title: Déplacer un disque + résolution des conflits d'emplacement
+    public: Déplacer un disque et résoudre les conflits d'emplacement
     status: todo
     estimate: 0.5
     visible: true
@@ -135,6 +144,7 @@ lots:
     created: 2026-09-29
   - id: L18
     title: "Nouvelle photo d'une page cataloguée : rapprochement par adresse, propositions, confirmé préservé"
+    public: Nouvelle photo d'une page déjà cataloguée
     status: todo
     estimate: 1
     visible: true
@@ -142,6 +152,7 @@ lots:
     created: 2026-09-29
   - id: L19
     title: "Écran À vérifier : non identifiés, incertains, doublons possibles, conflits, pages non photographiées, échecs"
+    public: "Écran À vérifier : non identifiés, doublons, conflits"
     status: todo
     estimate: 1
     visible: true
@@ -149,6 +160,7 @@ lots:
     created: 2026-09-29
   - id: L20
     title: Sauvegarde / restauration / export CSV (zip base + photos + manifeste, test aller-retour)
+    public: Sauvegarde, restauration et export CSV
     status: todo
     estimate: 1
     visible: true
