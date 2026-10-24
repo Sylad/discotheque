@@ -194,3 +194,4 @@ lots:
     started: 2026-10-24
 acknowledged:
   - { sha: 2add77dcf02620468d21973891459cca23638476, subject: "config: la documentation suit le code (docs.sync) et l'étude de cas du projet est déclarée (docs.articles) — outillage cadence, lead 24-10", date: 2026-10-24, reason: "réglage d'outillage cadence (docs.sync, docs.articles), pas un lot du projet — lead 24-10" }
+  - { sha: c857124156c29e56734e15f6576e7ca30cf32b9e, subject: "plan: L24 migration du plan vers .cadence/raf.yaml (cadence L284)", date: 2026-10-24, reason: "commit de plan du lead dont le message cite un lot de cadence, pas de ce dépôt — lead 24-10" }
