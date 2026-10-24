@@ -12,3 +12,11 @@ deliver:
       contains: '"status":"ok"'
     - url: https://discotheque.sladoire.dev/
   verifyTimeout: 600
+
+# Documentation qui suit le code (cadence docs.sync, L307 de cadence, 24-10) : raf check et la revue signalent un lot dont le code laisse sa doc en retard ; docs.articles = étude de cas du projet dans claude-code-codex (le bibliothécaire propose un lot là-bas).
+docs:
+  sync:
+    # Règle PRÉVENTIVE : le dépôt n'a pas encore de code (design à valider). Dès qu'il y en aura, le README (stack, statut), le CLAUDE.md (architecture, règles dures) ou docs/design.md devront suivre. `docs/spec-origine.md` est volontairement absente (copie à ne pas modifier).
+    - paths: ['backend/src/**', 'frontend/src/**', '!**/*.test.*', '!**/*.spec.*', '!**/__snapshots__/**']
+      docs: [README.md, CLAUDE.md, docs/design.md]
+  since: 2026-10-24
