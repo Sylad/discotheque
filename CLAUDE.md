@@ -53,7 +53,7 @@ tant que le design n'est pas validé. Pas encore de dépôt GitHub ni de chart g
 
 ## Plan (raf)
 
-Le reste à faire vit dans `docs/plan/raf.yaml`, tenu par le CLI `raf`. Chaque
+Le reste à faire vit dans `.cadence/raf.yaml`, tenu par le CLI `raf`. Chaque
 commit cite son lot (`feat(L7): …`, `L7/t1`). `raf start` avant le premier commit,
 `raf done` une fois testé, décisions dans `raf note`. `raf check` doit rester propre.
 Commits à chemins explicites (jamais `git add -A` ni `commit -a`).

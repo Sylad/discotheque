@@ -14,7 +14,7 @@ Cadrage (2026-09-29) : spec, design et plan. Pas encore de code applicatif.
 
 - Spec d'origine : [`docs/spec-origine.md`](docs/spec-origine.md)
 - Design (à valider) : [`docs/design.md`](docs/design.md)
-- Plan : [`docs/plan/raf.yaml`](docs/plan/raf.yaml) (tenu par `raf`, [cadence](https://github.com/Sylad/cadence))
+- Plan : [`.cadence/raf.yaml`](.cadence/raf.yaml) (tenu par `raf`, [cadence](https://github.com/Sylad/cadence))
 
 ## Stack prévue
 

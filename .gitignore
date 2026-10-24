@@ -50,4 +50,4 @@ Thumbs.db
 desktop.ini
 
 # page générée par raf gantt
-docs/plan/gantt.html
+.cadence/gantt.html

@@ -1,7 +1,7 @@
 # Discothèque — document de design (V1)
 
 > Statut : **à valider par Sylvain** (validation unique, au design). Après
-> validation, les lots de `docs/plan/raf.yaml` s'enchaînent sans nouvelle question.
+> validation, les lots de `.cadence/raf.yaml` s'enchaînent sans nouvelle question.
 > Source : `docs/spec-origine.md` (spec de Sylvain, copiée telle quelle).
 > Rédigé le 2026-09-29.
 
