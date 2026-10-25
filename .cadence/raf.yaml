@@ -27,6 +27,7 @@ lots:
     notes:
       - { date: 2026-09-29, text: "spec §8 : reflets, séries, bonus, plusieurs éditions d'un même film ; photos dans essais/ (gitignoré), vérité terrain en JSON hors git" }
       - { date: 2026-09-29, text: "Sylvain 29-09 : 10 photos originales 4080×3064 dans essais/photos (non versionnées) ; vérité terrain pré-remplie par Claude (photos transmises à Anthropic pour cette préparation seulement, accord explicite), corrigée ensuite par Sylvain" }
+      - { date: 2026-10-26, text: "26-10 (lead) : toujours en pause à la demande de Sylvain — il corrige essais/verite-terrain.md ; rien à faire côté lead tant qu'il ne relance pas" }
     started: 2026-09-29
   - id: L3
     title: "Essai vision sur les 10 photos : modèles candidats, grille de notation, verdict (jalon qui départage le modèle)"
