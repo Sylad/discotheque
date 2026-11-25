@@ -20,3 +20,21 @@ docs:
     - paths: ['backend/src/**', 'frontend/src/**', '!**/*.test.*', '!**/*.spec.*', '!**/__snapshots__/**']
       docs: [README.md, CLAUDE.md, docs/design.md]
   since: 2026-10-24
+
+# Analyse statique (L801 de cadence, D-31 du registre parent) : la porte de `cadence run`
+# joue ces outils à chaque lot et refuse toute violation nouvelle (base figée dans
+# .cadence/analyse/). Le dépôt n'a pas encore de code (L4) : les outils sont déclarés à
+# la racine et couvriront backend/, frontend/ (ESLint) et worker/ (ruff) dès leur arrivée.
+analyse:
+  - name: eslint
+    command: npx eslint -f json .
+    format: eslint-json
+    configs: [eslint.config.mjs]
+  - name: tsc
+    command: npx tsc --noEmit --pretty false
+    format: tsc
+    configs: [tsconfig.json]
+  - name: ruff
+    command: uvx ruff@0.17.6 check --config ruff.toml --output-format json --exit-zero .
+    format: ruff-json
+    configs: [ruff.toml]

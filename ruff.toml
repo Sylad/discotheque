@@ -1,0 +1,13 @@
+# Analyse du worker vision Python (worker/, L25, D-31), jouée par `cadence analyse`.
+# Seuils de cadence : complexité 15, 5 paramètres au plus.
+target-version = "py312"
+
+[lint]
+select = ["E", "F", "B", "C901", "PLR"]
+
+[lint.mccabe]
+max-complexity = 15
+
+[lint.pylint]
+max-args = 5
+max-branches = 15
